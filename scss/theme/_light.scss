@@ -52,4 +52,33 @@ html {
 
   // auth
   --auth-content-bg: #fff;
+  --auth-content-heading: var(--auth-intro-text);
+  @include abstracts.screen(md) {
+    --auth-intro-bg: #fff;
+  }
+  --auth-intro-text: #fff;
+
+  //form:
+  --form-placeholder-color: #d2d1d6;
+
+  //Product details
+  --product-detail-bg: #fff;
+  --product-detail-info-bg: #f6f6f6;
+  --product-detail-info-content-bg: #fff;
+  --product-detail-tag-bg: #ededf6;
+
+  @include abstracts.screen(md) {
+    --product-detail-bg: #fafafd;
+    --product-detail-info-bg: #fff;
+  }
+
+  //breadcrumbs
+  --breadcrumbs-bg: #f6f6f6;
+  --breadcrumbs-shadow: rgba(237, 237, 246, 0.2);
+  @include abstracts.screen(md) {
+    --breadcrumbs-bg: #fff;
+  }
+
+  // Search bar
+  --search-bar-bg: #fff;
 }
