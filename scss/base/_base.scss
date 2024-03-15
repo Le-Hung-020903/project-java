@@ -3,6 +3,7 @@
 ::after,
 ::before {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -29,6 +30,7 @@ a,
 button,
 input,
 img,
+input,
 textarea,
 select {
   padding: 0;
@@ -36,7 +38,6 @@ select {
   border: none;
   outline: none;
   color: inherit;
-  -webkit-tap-highlight-color: transparent;
 }
 input {
   background: transparent;
@@ -49,4 +50,12 @@ input {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
+}
+em,
+i {
+  font-style: italic;
+}
+b,
+strong {
+  font-weight: 600;
 }

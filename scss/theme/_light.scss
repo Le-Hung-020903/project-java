@@ -84,4 +84,12 @@ html {
 
   //review-card
   --review-card-bg: #fafafd;
+  --review-card-title: #1a162e;
+  --review-card-desc: #1a162e;
+  @include abstracts.screen(md) {
+    --review-card-bg: #fff;
+  }
+
+  //Text content
+  --text-content-hr-bg: #ebebeb;
 }
