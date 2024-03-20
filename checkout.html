@@ -78,15 +78,15 @@
                         <div class="cart-item__ctrl cart-item__ctrl--md-block">
                           <div class="cart-item__input">
                             LavAzza
-                            <img src="./assets/icons/arrrow-down2.svg" alt="" />
+                            <img src="./assets/icons/arrrow-down2.svg" alt="" class="icon" />
                           </div>
                           <div class="cart-item__input">
                             <button class="cart-item__input-btn">
-                              <img src="./assets/icons/minus.svg" alt="" />
+                              <img src="./assets/icons/minus.svg" alt="" class="icon" />
                             </button>
                             <span>1</span>
                             <button class="cart-item__input-btn">
-                              <img src="./assets/icons/plus.svg" alt="" />
+                              <img src="./assets/icons/plus.svg" alt="" class="icon" />
                             </button>
                           </div>
                         </div>
@@ -98,7 +98,7 @@
                             <img src="./assets/icons/heart-2.svg" alt="" />
                             Save
                           </button>
-                          <button class="cart-item__ctrl-btn">
+                          <button class="cart-item__ctrl-btn js-toggle" toggle-target="#delete-confirm">
                             <img src="./assets/icons/delete.svg" alt="" />
                             Delete
                           </button>
@@ -120,15 +120,15 @@
                         <div class="cart-item__ctrl cart-item__ctrl--md-block">
                           <div class="cart-item__input">
                             LavAzza
-                            <img src="./assets/icons/arrrow-down2.svg" alt="" />
+                            <img src="./assets/icons/arrrow-down2.svg" alt="" class="icon" />
                           </div>
                           <div class="cart-item__input">
                             <button class="cart-item__input-btn">
-                              <img src="./assets/icons/minus.svg" alt="" />
+                              <img src="./assets/icons/minus.svg" alt="" class="icon" />
                             </button>
                             <span>1</span>
                             <button class="cart-item__input-btn">
-                              <img src="./assets/icons/plus.svg" alt="" />
+                              <img src="./assets/icons/plus.svg" alt="" class="icon" />
                             </button>
                           </div>
                         </div>
@@ -140,7 +140,7 @@
                             <img src="./assets/icons/heart-2.svg" alt="" />
                             Save
                           </button>
-                          <button class="cart-item__ctrl-btn">
+                          <button class="cart-item__ctrl-btn js-toggle" toggle-target="#delete-confirm">
                             <img src="./assets/icons/delete.svg" alt="" />
                             Delete
                           </button>
@@ -162,15 +162,15 @@
                         <div class="cart-item__ctrl cart-item__ctrl--md-block">
                           <div class="cart-item__input">
                             LavAzza
-                            <img src="./assets/icons/arrrow-down2.svg" alt="" />
+                            <img src="./assets/icons/arrrow-down2.svg" alt="" class="icon" />
                           </div>
                           <div class="cart-item__input">
                             <button class="cart-item__input-btn">
-                              <img src="./assets/icons/minus.svg" alt="" />
+                              <img src="./assets/icons/minus.svg" alt="" class="icon" />
                             </button>
                             <span>1</span>
                             <button class="cart-item__input-btn">
-                              <img src="./assets/icons/plus.svg" alt="" />
+                              <img src="./assets/icons/plus.svg" alt="" class="icon" />
                             </button>
                           </div>
                         </div>
@@ -182,7 +182,7 @@
                             <img src="./assets/icons/heart-2.svg" alt="" />
                             Save
                           </button>
-                          <button class="cart-item__ctrl-btn">
+                          <button class="cart-item__ctrl-btn js-toggle" toggle-target="#delete-confirm">
                             <img src="./assets/icons/delete.svg" alt="" />
                             Delete
                           </button>
@@ -196,7 +196,7 @@
                     <div class="col-8 col-xxl-7">
                       <div class="cart-info__countinue">
                         <a href="./" class="cart-info__countinue-link">
-                          <img src="./assets/icons/arrrow-down2.svg" alt="" class="cart-info__countinue-icon" />
+                          <img src="./assets/icons/arrrow-down2.svg" alt="" class="cart-info__countinue-icon icon" />
                           Continue Shopping
                         </a>
                       </div>
@@ -263,5 +263,19 @@
     <script>
       load("#footer", "./templates/footer.html");
     </script>
+
+    <!-- Dialog / modal -->
+    <div id="delete-confirm" class="dialog hide">
+      <div class="dialog__content">
+        <div class="dialog-content">Do you want to remove this item from shopping cart?</div>
+        <div class="dialog__bottom">
+          <button class="btn btn--small btn--text dialog__btn js-toggle" toggle-target="#delete-confirm">Cancel</button>
+          <button class="btn btn--small btn--primary dialog__btn js-toggle" toggle-target="#delete-confirm">
+            Delete
+          </button>
+        </div>
+      </div>
+      <div class="dialog__overlay js-toggle" toggle-target="#delete-confirm"></div>
+    </div>
   </body>
 </html>
